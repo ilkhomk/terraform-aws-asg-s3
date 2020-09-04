@@ -5,7 +5,7 @@ resource "aws_autoscaling_group" "example" {
     "${var.region}c",
   ]
 
-  desired_capacity = 3
+  desired_capacity = "${var.desired_capacity}"
   max_size = "${var.max_size}"
   min_size = "${var.min_size}"
 
